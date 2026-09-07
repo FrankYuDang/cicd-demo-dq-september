@@ -31,6 +31,7 @@ jobs:
         pip install pytest
 
     - name: Print first 5 lines of calculator.py
+      working-directory: src  # 指定在 src 目录下运行
       run: |
         head -n 5 calculator.py
 
